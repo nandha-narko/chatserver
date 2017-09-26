@@ -1,0 +1,31 @@
+{
+  "name": "chatserver",
+  "version": "1.0.0",
+  "description": "A simple chat server",
+  "scripts": {
+    "build": "rimraf dist && webpack --progress",
+    "watch": "npm run build -- --watch",
+    "server": "webpack-dev-server --inline --progress --content-base src",
+    "start": "node app.js"
+  },
+  "contributors": [
+    "Nandha <nandhaaas@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4",
+    "socket.io": "^2.0.3",
+    "socket.io-client": "^2.0.3"
+  },
+  "keywords": [
+    "Chat Server"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nandhaaas/chatserver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nandhaaas/chatserver/issues"
+  },
+  "homepage": "https://github.com/nandhaaas/chatserver#readme"
+}
